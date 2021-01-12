@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from __future__ import print_function
 
 # change this symbol to whatever you prefer
@@ -14,6 +14,7 @@ error_string = error.decode('utf-8')
 
 if 'fatal: not a git repository' in error_string:
 	sys.exit(0)
+
 
 branch = branch.decode("utf-8").strip()[11:]
 
